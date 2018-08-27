@@ -5,7 +5,7 @@
 // then click the URL that is emitted to the Output tab of the console
 
 function helloWorld() {
-    echo 'hello world';
+    echo "<h1>hello world</h1>";
 }
 
 helloWorld();
