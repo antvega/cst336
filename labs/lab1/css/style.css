@@ -38,6 +38,11 @@ nav a:hover {
     transition: .9s;
 }
 
+#contact{
+    text-align: center;
+    padding-top: 15px;
+}
+
 #me, #welcomeText {
     float: left;
 }
