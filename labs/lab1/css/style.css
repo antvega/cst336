@@ -15,7 +15,6 @@ footer{
 
 figure, div{
     text-align: left;
-
 }
 
 h1 {
@@ -29,12 +28,12 @@ nav a {
     padding: 15px;
     padding-bottom:4px;
     font-size: 1.8em;
-    text-decoration: underline;
     color: white;
+    text-decoration: none;
 }
 
 nav a:hover {
-    border-bottom: 2px;
+    border-bottom: 2px orange solid;
     font-size: 2em;
     transition: .9s;
 }
