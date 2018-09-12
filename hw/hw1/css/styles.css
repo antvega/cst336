@@ -1,0 +1,78 @@
+img {
+    border:0;
+}
+.types {
+    color:black;
+}
+
+#title {
+    background-color:#1F6179;
+    color:white;
+    padding-left: 35px;
+    font-size: large;
+}
+
+#algorithms{
+    display: flex;
+    justify-content:center;
+}
+
+#algorithms2{
+    display: flex;
+    justify-content:center;
+}
+
+#gif {
+    display: flex;
+    justify-content:left;  
+}
+
+#mainPageEx{
+    text-align: center;
+    color:#1F6179;
+    padding-bottom: 50px;
+}
+.movement {
+    color:#1F6179;
+}
+
+.explanation {
+    text-indent:50px;
+    line-height: 1;
+    font-size: 20px;
+    margin-left: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+/*#insertion{*/
+/*    background-color:#2B7E9F;*/
+/*    margin:10px;*/
+/*}*/
+
+/*#selection{*/
+/*    background-color:#2B7E9F;*/
+/*    margin:10px;*/
+/*}*/
+
+/*#bubble{*/
+/*    background-color:#2B7E9F;*/
+/*    margin:10px;*/
+/*}*/
+
+#text{
+    text-align: center;
+    color:black;
+}
+#menu_title{
+    color: #D76A2C;
+    font-size:50px;
+    margin-bottom: 25px;
+}
+.pic {
+    padding-left: 45px;
+    padding-right: 25px;
+    color:white;
+    /*background-color:black;*/
+    margin:10px;
+}
