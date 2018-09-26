@@ -15,10 +15,7 @@
             } while(in_array($rand,$usedCards));
             array_push($usedCards,$rand);   
         }
-        // echo $usedCards[0]." ";
-        // echo $usedCards[1]." ";
-        // echo $usedCards[2]." ";
-        // echo $usedCards[3]." ";
+
         shuffle($usedCards);
         for($i=0;$i<4;$i++){
             if($i<=1){
@@ -77,7 +74,7 @@
     <head>
         
         <style>@import url("css/styles.css");</style>
-        <title>Chances</title>
+        <title>Black Jack</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
