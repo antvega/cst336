@@ -1,0 +1,41 @@
+[25-Sep-2018 18:23:38 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 22
+[25-Sep-2018 18:23:38 UTC] PHP Stack trace:
+[25-Sep-2018 18:23:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[25-Sep-2018 18:23:38 UTC] PHP   2. makeHand() /home/ubuntu/workspace/cst336/hw/hw2/index.php:45
+[25-Sep-2018 18:23:38 UTC] PHP   3. array_push() /home/ubuntu/workspace/cst336/hw/hw2/index.php:22
+[25-Sep-2018 18:23:38 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 22
+[25-Sep-2018 18:23:38 UTC] PHP Stack trace:
+[25-Sep-2018 18:23:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[25-Sep-2018 18:23:38 UTC] PHP   2. makeHand() /home/ubuntu/workspace/cst336/hw/hw2/index.php:45
+[25-Sep-2018 18:23:38 UTC] PHP   3. array_push() /home/ubuntu/workspace/cst336/hw/hw2/index.php:22
+[25-Sep-2018 18:23:42 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 22
+[25-Sep-2018 18:23:42 UTC] PHP Stack trace:
+[25-Sep-2018 18:23:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[25-Sep-2018 18:23:42 UTC] PHP   2. makeHand() /home/ubuntu/workspace/cst336/hw/hw2/index.php:45
+[25-Sep-2018 18:23:42 UTC] PHP   3. array_push() /home/ubuntu/workspace/cst336/hw/hw2/index.php:22
+[25-Sep-2018 18:23:42 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 22
+[25-Sep-2018 18:23:42 UTC] PHP Stack trace:
+[25-Sep-2018 18:23:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[25-Sep-2018 18:23:42 UTC] PHP   2. makeHand() /home/ubuntu/workspace/cst336/hw/hw2/index.php:45
+[25-Sep-2018 18:23:42 UTC] PHP   3. array_push() /home/ubuntu/workspace/cst336/hw/hw2/index.php:22
+[25-Sep-2018 18:25:13 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 26
+[25-Sep-2018 18:25:13 UTC] PHP Stack trace:
+[25-Sep-2018 18:25:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[25-Sep-2018 18:25:13 UTC] PHP   2. makeHand() /home/ubuntu/workspace/cst336/hw/hw2/index.php:49
+[25-Sep-2018 18:25:13 UTC] PHP   3. array_push() /home/ubuntu/workspace/cst336/hw/hw2/index.php:26
+[25-Sep-2018 18:25:13 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 26
+[25-Sep-2018 18:25:13 UTC] PHP Stack trace:
+[25-Sep-2018 18:25:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[25-Sep-2018 18:25:13 UTC] PHP   2. makeHand() /home/ubuntu/workspace/cst336/hw/hw2/index.php:49
+[25-Sep-2018 18:25:13 UTC] PHP   3. array_push() /home/ubuntu/workspace/cst336/hw/hw2/index.php:26
+[25-Sep-2018 18:25:33 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 26
+[25-Sep-2018 18:25:33 UTC] PHP Stack trace:
+[25-Sep-2018 18:25:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[25-Sep-2018 18:25:33 UTC] PHP   2. makeHand() /home/ubuntu/workspace/cst336/hw/hw2/index.php:49
+[25-Sep-2018 18:25:33 UTC] PHP   3. array_push() /home/ubuntu/workspace/cst336/hw/hw2/index.php:26
+[25-Sep-2018 18:25:33 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 26
+[25-Sep-2018 18:25:33 UTC] PHP Stack trace:
+[25-Sep-2018 18:25:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[25-Sep-2018 18:25:33 UTC] PHP   2. makeHand() /home/ubuntu/workspace/cst336/hw/hw2/index.php:49
+[25-Sep-2018 18:25:33 UTC] PHP   3. array_push() /home/ubuntu/workspace/cst336/hw/hw2/index.php:26
+[26-Sep-2018 19:48:44 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 73

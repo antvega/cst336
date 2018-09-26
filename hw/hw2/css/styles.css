@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+body {
+    background-color: lightblue;
+}
+
+.hands {
+    color:black;
+    display:flex;
+    border-style: solid;
+    border-width: medium;
+    border-color: red;
+    text-decoration: underline;
+    
+    /*align-content: stretch;*/
+}
+
+i{
+    text-align: center;
+}
+
+#hand1{
+    margin:auto;
+    
+}
+#hand2{
+    margin:auto;
+}
+#winner{
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: 1px;
+    color:white;
+    font-weight: lighter;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    padding-top: 100px;
+    text-align: center;
+}
+
+
