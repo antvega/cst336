@@ -1,0 +1,52 @@
+[01-Oct-2018 22:17:59 UTC] PHP Parse error:  syntax error, unexpected 'd' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 74
+[01-Oct-2018 22:29:17 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 10
+[01-Oct-2018 22:29:17 UTC] PHP Stack trace:
+[01-Oct-2018 22:29:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php:0
+[01-Oct-2018 22:29:31 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 10
+[01-Oct-2018 22:29:31 UTC] PHP Stack trace:
+[01-Oct-2018 22:29:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php:0
+[01-Oct-2018 22:29:54 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 10
+[01-Oct-2018 22:29:54 UTC] PHP Stack trace:
+[01-Oct-2018 22:29:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php:0
+[03-Oct-2018 21:26:42 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 55
+[03-Oct-2018 21:26:42 UTC] PHP Stack trace:
+[03-Oct-2018 21:26:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php:0
+[03-Oct-2018 21:28:15 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 55
+[03-Oct-2018 21:28:15 UTC] PHP Stack trace:
+[03-Oct-2018 21:28:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php:0
+[03-Oct-2018 21:29:01 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 55
+[03-Oct-2018 21:29:01 UTC] PHP Stack trace:
+[03-Oct-2018 21:29:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php:0
+[03-Oct-2018 21:29:52 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 55
+[03-Oct-2018 21:29:52 UTC] PHP Stack trace:
+[03-Oct-2018 21:29:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php:0
+[03-Oct-2018 21:32:30 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 54
+[03-Oct-2018 21:32:30 UTC] PHP Stack trace:
+[03-Oct-2018 21:32:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php:0
+[03-Oct-2018 21:32:31 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 54
+[03-Oct-2018 21:32:31 UTC] PHP Stack trace:
+[03-Oct-2018 21:32:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php:0
+[03-Oct-2018 21:32:37 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 54
+[03-Oct-2018 21:32:37 UTC] PHP Stack trace:
+[03-Oct-2018 21:32:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php:0
+[03-Oct-2018 21:33:16 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 53
+[03-Oct-2018 21:33:16 UTC] PHP Stack trace:
+[03-Oct-2018 21:33:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php:0
+[03-Oct-2018 21:33:40 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 53
+[03-Oct-2018 21:33:40 UTC] PHP Stack trace:
+[03-Oct-2018 21:33:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php:0
+[03-Oct-2018 21:35:10 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 53
+[03-Oct-2018 21:35:10 UTC] PHP Stack trace:
+[03-Oct-2018 21:35:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php:0
+[03-Oct-2018 21:35:52 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 53
+[03-Oct-2018 21:35:52 UTC] PHP Stack trace:
+[03-Oct-2018 21:35:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php:0
+[03-Oct-2018 21:36:21 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 53
+[03-Oct-2018 21:36:21 UTC] PHP Stack trace:
+[03-Oct-2018 21:36:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php:0
+[03-Oct-2018 21:36:36 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 53
+[03-Oct-2018 21:36:36 UTC] PHP Stack trace:
+[03-Oct-2018 21:36:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php:0
+[03-Oct-2018 21:36:48 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php on line 53
+[03-Oct-2018 21:36:48 UTC] PHP Stack trace:
+[03-Oct-2018 21:36:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/Slider/index.php:0

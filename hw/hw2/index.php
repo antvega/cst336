@@ -58,7 +58,13 @@
         // echo $p1." ";
         // echo $p2. " ";
         $winner;
-        if($p1 > 21&&$p2>21){
+        if($p1 > 21 && $p2 <=21){
+            $winner = "Player 2";
+        } else if($p2 > 21 && $p1 <=21){
+            $winner = "Player 1";
+        } else if ($p1 > 21 && $p2 > 21){
+             $winner = "Dealer";
+        } else if($p1 == $p2){
             $winner = "Dealer";
         } else if($p1 > $p2){
             $winner = "Player 1";

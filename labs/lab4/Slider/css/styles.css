@@ -5,6 +5,30 @@
         color:yellow;
     }
     
+    .radioBtns{
+        color:black;
+    }
+    #pbtns{
+        /*position: relative;*/
+        margin: auto;
+    }
+
+    #layoutID{
+        display: inline-block;
+        text-align: left;
+        padding:10px;
+        border-radius: 10px;
+        background-color: white;
+        
+    }
+    .submit{
+        border-radius: 25px;
+        /*background: #73AD21;*/
+        padding: 20px; 
+        width: 250px;
+        /*height: 150px; */
+    }
+    
     input {
         font-size: 3em;
         color: black;
