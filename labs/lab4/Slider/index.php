@@ -58,7 +58,7 @@ if(!empty($_GET["keyword"]) || !empty($_GET["category"])){
             <br>
 
             <select name="category">
-                <option value=""> Select One </option>
+                <option value=""> Categories </option>
                 <option value="ocean">Sea</option>
                 <option>Mountains</option>
                 <option>Forest</option>
