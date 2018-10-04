@@ -72,14 +72,14 @@ if(!empty($_GET["keyword"]) || !empty($_GET["category"])){
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <?php
-                  for ($i=1; $i < 9; $i++) { 
+                  for ($i=1; $i < 7; $i++) { 
                     echo "<li data-target='#carouselExampleIndicators' data-slide-to='$i'></li>";
                   }
                  ?>
               </ol>
               <div class="carousel-inner">
                 <?php
-                  for ($i = 0; $i < 9; $i++) {
+                  for ($i = 0; $i < 7; $i++) {
                       echo "<div class=\"carousel-item ";
                       echo ($i == 0)?" active ":"";
                       echo "\">";
