@@ -18,6 +18,7 @@
           $moreThanOneWinner=false;
           $deck = new Deck();
           $players = array("Maryann", "Antonio", "Brandon", "Brett");
+          shuffle($players);
           $totals = array();
           function play() {
             global $deck;
