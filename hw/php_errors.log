@@ -39,3 +39,9 @@
 [25-Sep-2018 18:25:33 UTC] PHP   2. makeHand() /home/ubuntu/workspace/cst336/hw/hw2/index.php:49
 [25-Sep-2018 18:25:33 UTC] PHP   3. array_push() /home/ubuntu/workspace/cst336/hw/hw2/index.php:26
 [26-Sep-2018 19:48:44 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 73
+[16-Oct-2018 17:36:54 UTC] PHP Fatal error:  Cannot use assign-op operators with overloaded objects nor string offsets in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 17
+[16-Oct-2018 17:36:54 UTC] PHP Stack trace:
+[16-Oct-2018 17:36:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/index.php:0
+[16-Oct-2018 17:36:54 UTC] PHP   2. doEverything() /home/ubuntu/workspace/cst336/hw/hw3/index.php:57
+[16-Oct-2018 17:36:54 UTC] PHP   3. decap() /home/ubuntu/workspace/cst336/hw/hw3/index.php:50
+[16-Oct-2018 18:13:54 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 85
