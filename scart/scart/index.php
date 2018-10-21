@@ -4,7 +4,13 @@
     session_start();
     
     if(!isset($_SESSION['cart'])){
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        // echo "<h1>!!!!!!now session cart!!!!!!!</h1>";
         $_SESSION['cart'] = array();
+        echo gettype($_SESSION['cart']);
     }
     
     if(isset($_GET['query'])){
@@ -14,16 +20,25 @@
     
 
     if(isset($_POST['itemName'])){// check if itemname is set
-        array_push($_SESSION['cart'], $_POST['itemName']);
-        //$_SESSION['cart'] = $_POST['itemName'];
-        // echo "!!!!!";
-        // $newItem = array();
-        // $newItem['name']= $_POST['itemName'];
-        // $newItem['id']=$_POST['itemId'];
-        // $newItem['price']=$_POST['itemPrice'];
-        // $newItem['image']=$_POST['itemImage'];
-        // array_push($_SESSION["cart"],$newItem);
+        $newItem = array();
+        $newItem['name']= $_POST['itemName'];
+        $newItem['id']=$_POST['itemId'];
+        $newItem['price']=$_POST['itemPrice'];
+        $newItem['image']=$_POST['itemImage'];
+            
+        foreach($_SESSION['cart'] as &$item){
+            if($newItem['id']==$item['id']){
+                $item['quantity'] += 1;
+                $found = true;
+            }
+        }
+        
+        if($found!=true){
+            $newItem['quantity']=1;
+            array_push($_SESSION['cart'],$newItem);
+        }
     }
+
 
     
 ?>
@@ -51,6 +66,9 @@
                     </div>
                     <ul class='nav navbar-nav'>
                         <li><a href='index.php'>Home</a></li>
+                        <li><a href='scart.php'>
+                            <span class='glyphicon glyphicon-shopping-cart' aria-hidden='true'>
+                            </span> Cart: <?php displayCartCount();  ?></a></li>
                         <li><a href='scart.php'>Cart</a></li>
                     </ul>
                 </div>
