@@ -4,13 +4,13 @@
     session_start();
     
     if(!isset($_SESSION['cart'])){
-        echo "<br>";
-        echo "<br>";
-        echo "<br>";
-        echo "<br>";
+        // echo "<br>";
+        // echo "<br>";
+        // echo "<br>";
+        // echo "<br>";
         // echo "<h1>!!!!!!now session cart!!!!!!!</h1>";
         $_SESSION['cart'] = array();
-        echo gettype($_SESSION['cart']);
+        //echo gettype($_SESSION['cart']);
     }
     
     if(isset($_GET['query'])){
