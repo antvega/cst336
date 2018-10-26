@@ -6,3 +6,28 @@
 [10-Sep-2018 22:23:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
 [10-Sep-2018 22:23:55 UTC] PHP   2. displayPoints() /home/ubuntu/workspace/cst336/labs/lab2/index.php:42
 [17-Sep-2018 22:20:41 UTC] PHP Parse error:  syntax error, unexpected '$points' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab3/arrays.php on line 25
+[22-Oct-2018 22:14:59 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php on line 12
+[22-Oct-2018 22:14:59 UTC] PHP Stack trace:
+[22-Oct-2018 22:14:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php:0
+[22-Oct-2018 22:22:41 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php on line 13
+[22-Oct-2018 22:22:41 UTC] PHP Stack trace:
+[22-Oct-2018 22:22:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php:0
+[22-Oct-2018 22:31:04 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php on line 13
+[22-Oct-2018 22:31:04 UTC] PHP Stack trace:
+[22-Oct-2018 22:31:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php:0
+[22-Oct-2018 22:31:50 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php on line 13
+[22-Oct-2018 22:31:50 UTC] PHP Stack trace:
+[22-Oct-2018 22:31:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php:0
+[22-Oct-2018 22:32:09 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php on line 13
+[22-Oct-2018 22:32:09 UTC] PHP Stack trace:
+[22-Oct-2018 22:32:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php:0
+[22-Oct-2018 22:35:21 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php on line 13
+[22-Oct-2018 22:35:21 UTC] PHP Stack trace:
+[22-Oct-2018 22:35:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php:0
+[22-Oct-2018 22:36:33 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php on line 13
+[22-Oct-2018 22:36:33 UTC] PHP Stack trace:
+[22-Oct-2018 22:36:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php:0
+[26-Oct-2018 19:29:49 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/labs/lab6/index1.php on line 3
+[26-Oct-2018 19:29:49 UTC] PHP Stack trace:
+[26-Oct-2018 19:29:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index1.php:0
+[26-Oct-2018 20:26:29 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/ubuntu/workspace/cst336/labs/lab6/purchaseHistory.php on line 17
