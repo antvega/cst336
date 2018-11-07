@@ -42,9 +42,8 @@
     
     //displays individual movie
     function displayMovieInfo($movie){
-        echo "<h1>".$movie."</h1>";
         global $dbConn;
-        $sql = "SELECT * FROM blockbuster WHERE bb_id = " .$movie;
+        $sql = "SELECT * FROM blockbuster WHERE bb_id = " . $movie;
         $stmt = $dbConn->prepare($sql);
         $stmt->execute();
         $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
