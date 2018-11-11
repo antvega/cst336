@@ -1,8 +1,10 @@
 <?php
+session_start();
 
 include '../../inc/dbConnection.php';
 $dbConn = startConnection("ottermart");
 include 'inc/functions.php';
+validateSession();
 
 if (isset($_GET['addProduct'])) { //checks whether the form was submitted
     
@@ -59,6 +61,9 @@ if (isset($_GET['addProduct'])) { //checks whether the form was submitted
            </select> <br />
            Set Image Url: <input type="text" name="productImage"><br>
            <input type="submit" name="addProduct" value="Add Product">
+        </form>
+        <form action="admin.php">
+           <input type="submit" value="Back">     
         </form>
 
     </body>

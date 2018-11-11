@@ -1,6 +1,11 @@
 <?php
 
-
+function validateSession(){
+    if (!isset($_SESSION['adminFullName'])) {
+        header("Location: index.php");  //redirects users who haven't logged in 
+        exit;
+    }
+}
 
 
 function displayAllProducts(){
@@ -12,14 +17,18 @@ function displayAllProducts(){
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
 
     foreach ($records as $record) {
-        
-        echo "[<a href='updateProduct.php?productId=".$record['productId']."'>Update</a>]";
-        //echo "[<a href='deleteProduct.php'>Delete</a>]";
-        echo "<form action='deleteProduct.php'>";
-        echo "       <input type='hidden' name='productId' value='".$record['productId']."'>";
-        echo "<button type='submit'>Delete</button>";
+        echo "<a class='btn btn-primary' role='button' href='updateProduct.php?productId=".$record['productId']."'>Update</a>";
+        //echo "[<a href='deleteProduct.php?productId=".$record['productId']."'>Delete</a>]";
+        echo "<form action='deleteProduct.php' onsubmit='return confirmDelete()'>";
+        echo "   <input type='hidden' name='productId' value='".$record['productId']."'>";
+        echo "   <button class='btn btn-outline-danger' type='submit'>Delete</button>";
         echo "</form>";
-        echo $record['productName'] . "  " . $record[price]   . "<br>";
+        
+        echo "[<a 
+        
+        onclick='openModal()' target='productModal'
+        href='productInfo.php?productId=".$record['productId']."'>".$record['productName']."</a>]  ";
+        echo " $" . $record[price]   . "<br><br>";
         
     }
 }

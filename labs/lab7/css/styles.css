@@ -1,0 +1,39 @@
+#main {
+    background-color: #ffff00;
+    border-radius: 20px;
+    width: 50%;
+}
+
+input, select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #ccddff;
+    color: black;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+
+body {
+    background-color:lightblue;
+    background-attachment: fixed;
+    color: black;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
