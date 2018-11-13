@@ -6,7 +6,14 @@
         @import url("css/styles.css");
         </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+        <script>
+        $(document).ready(function(){
+            $("getCard").click(function(){
+                $("#hand1").fadeIn("slow");
+                $("#hand2").fadeIn("slow");
+            });
+        });
+        </script>
         <script>
             
             function getEl(elementId) {
@@ -77,7 +84,12 @@
                 robotHand =getRobotHand();
                 var playerHand = [];
                 playerHand = getHand();
-
+                
+                
+                // $("#doIt").fadeIn();
+                // $("#div2").fadeIn("slow");
+                // $("#div3").fadeIn(3000);
+                $(this).fadeIn();
                 document.write("<div class='hands'>");
                 document.write("<div id='hand1'>");
                 document.write("<h1> Your hand </h1>");
@@ -97,24 +109,14 @@
         </script>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-        
     </head>
     <body>
-
         <form>
           Enter one card number(1-13): <input type="number" id="hand"><br>
           <button id="getCard" onclick="doEverything()"> Gamble </button>
         </form>
         
         <script>
-        
-        //   $("#doMagic").mouseover( function(){ doMagic(); } );
-        
-        //   $("#message").html("Changing content using jQuery!");
-        
         </script>
-
-
     </body>
 </html>
