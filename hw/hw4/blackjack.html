@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JavaScript Hands </title>
+        <style>
+        @import url("css/styles.css");
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script>
+            
+            function getEl(elementId) {
+                return document.getElementById(elementId);
+            }
+        
+            function get_random(list){
+                return list[Math.floor((Math.random()*list.length))];
+            }
+                    
+            function getHand(){
+                var firstCard = document.getElementById("hand").value;
+                var firstCard = parseInt(firstCard);
+                
+                var cards = [];
+                var i;
+                for(i = 1; i <=13;i++){
+                    cards.push(i);
+                }
+                var randomCard = get_random(cards);
+                var hand = [];
+                hand.push(randomCard);
+                hand.push(firstCard);
+                return hand;
+            }
+            
+            function getRobotHand(){
+                var cards = [];
+                var i;
+                for(i = 1; i <=13;i++){
+                    cards.push(i);
+                }
+                var hand = [];
+                hand.push(get_random(cards));
+                hand.push(get_random(cards));
+                // document.write("<h1>hello</h1>");
+                return hand;
+            }
+            
+            function getWinner(playerHand,robotHand){
+                var i;
+                var player = 0;
+                var robot = 0;
+                for(i=0;i<2;i++){
+                    player += playerHand[i];
+                    robot += robotHand[i];
+                }
+
+                var winner;
+                if(player > 21 && robot <=21){
+                    winner = "Robot";
+                } else if(robot > 21 && player <=21){
+                    winner = "You";
+                } else if (player > 21 && robot > 21){
+                    winner = "Dealer";
+                } else if(player == robot){
+                    winner = "Dealer";
+                } else if(player > robot){
+                    winner = "You";
+                } else {
+                    winner = "Robot";
+                }
+                return winner;
+            }
+            
+            function doEverything(){
+                var robotHand = [];
+                robotHand =getRobotHand();
+                var playerHand = [];
+                playerHand = getHand();
+
+                document.write("<div class='hands'>");
+                document.write("<div id='hand1'>");
+                document.write("<h1> Your hand </h1>");
+                document.write("<img src=img/"+playerHand[0]+".png width="+70 +">");
+                document.write("<img src=img/"+playerHand[1]+".png width="+70 +">");
+                document.write("</div>");
+                document.write("<br>");
+                document.write("<div id='hand2'>");
+                document.write("<h1> Robot hand </h1>");
+                document.write("<img src=img/"+robotHand[0]+".png width="+70 +">");
+                document.write("<img src=img/"+robotHand[1]+".png width="+70 +">");
+                document.write("</div>");
+                document.write("</div>");
+                var winner = getWinner(playerHand,robotHand);
+                document.write("<h1> Winner is: " + winner +"</h1>");
+            }
+        </script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        
+    </head>
+    <body>
+
+        <form>
+          Enter one card number(1-13): <input type="number" id="hand"><br>
+          <button id="getCard" onclick="doEverything()"> Gamble </button>
+        </form>
+        
+        <script>
+        
+        //   $("#doMagic").mouseover( function(){ doMagic(); } );
+        
+        //   $("#message").html("Changing content using jQuery!");
+        
+        </script>
+
+
+    </body>
+</html>

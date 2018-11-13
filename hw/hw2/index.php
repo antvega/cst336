@@ -33,7 +33,7 @@
         // echo "<i class='fa fa-car'></i>";
         echo "<div class='hands'>";
             echo "<div id='hand1'>";
-            echo "<h1>Player 1<h1>";
+            echo "<h1>Your 1<h1>";
             echo "<img src='img/$player1Hand[0].png' alt='$player1Hand[0]' title='".ucfirst($player1Hand[0])."' width ='70'>";
             echo "<img src='img/$player1Hand[1].png' alt='$player1Hand[1]' title='".ucfirst($player1Hand[1])."' width ='70'>";
             echo "</div>";
@@ -43,7 +43,6 @@
             echo "<img src='img/$player2Hand[1].png' alt='$player2Hand[1]' title='".ucfirst($player2Hand[1])."' width ='70'>";
             echo "</div>";
         echo "</div>";
-        // echo "<div class='hands'>";
     }
     
     function getWinner(){
