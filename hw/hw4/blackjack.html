@@ -5,15 +5,9 @@
         <style>
         @import url("css/styles.css");
         </style>
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script>
-        $(document).ready(function(){
-            $("getCard").click(function(){
-                $("#hand1").fadeIn("slow");
-                $("#hand2").fadeIn("slow");
-            });
-        });
-        </script>
+
         <script>
             
             function getEl(elementId) {
@@ -61,6 +55,14 @@
                     player += playerHand[i];
                     robot += robotHand[i];
                 }
+                for(i=0;i<2;i++){
+                    console.log(player[i]);
+                 
+                }
+                for(i=0;i<2;i++){
+
+                    console.log(robot[i]);
+                }
 
                 var winner;
                 if(player > 21 && robot <=21){
@@ -84,39 +86,49 @@
                 robotHand =getRobotHand();
                 var playerHand = [];
                 playerHand = getHand();
+     
+                $("div1").append("<h1> Your hand </h1>");
+                $("div1").append("<img src=img/"+playerHand[0]+".png width="+70 +">");
+                $("div1").append("<img src=img/"+playerHand[1]+".png width="+70 +">");
+
+                $("div2").append("<h1> Robot hand </h1>");
+                $("div2").append("<img src=img/"+robotHand[0]+".png width="+70 +">");
+                $("div2").append("<img src=img/"+robotHand[1]+".png width="+70 +">");
+                //$("body").append("</div>");
                 
-                
-                // $("#doIt").fadeIn();
-                // $("#div2").fadeIn("slow");
-                // $("#div3").fadeIn(3000);
-                $(this).fadeIn();
-                document.write("<div class='hands'>");
-                document.write("<div id='hand1'>");
-                document.write("<h1> Your hand </h1>");
-                document.write("<img src=img/"+playerHand[0]+".png width="+70 +">");
-                document.write("<img src=img/"+playerHand[1]+".png width="+70 +">");
-                document.write("</div>");
-                document.write("<br>");
-                document.write("<div id='hand2'>");
-                document.write("<h1> Robot hand </h1>");
-                document.write("<img src=img/"+robotHand[0]+".png width="+70 +">");
-                document.write("<img src=img/"+robotHand[1]+".png width="+70 +">");
-                document.write("</div>");
-                document.write("</div>");
                 var winner = getWinner(playerHand,robotHand);
-                document.write("<h1> Winner is: " + winner +"</h1>");
+                $("div").append("<br>");
+                $("body").append("<h1 id='winner'> Winner is: " + winner +"</h1>");
+                //$("div").append("</div>");
             }
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#hands").fadeIn();
+                    $("#hand1").fadeIn("slow");
+                    $("#hand2").fadeIn("slow");
+                });
+            });
         </script>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     </head>
     <body>
-        <form>
-          Enter one card number(1-13): <input type="number" id="hand"><br>
-          <button id="getCard" onclick="doEverything()"> Gamble </button>
-        </form>
+        <p>You enter one card, your second card is randomly generated.</p>
+        Enter one card number(1-13): <input type="number" id="hand"><br>
+        <button id='fade' id="getCard" onclick="doEverything(); return false;"> Gamble </button>
         
-        <script>
-        </script>
+        <div class="hands">
+            <div1 id="hand1">
+                
+            </div1>
+            <div2 id="hand2">
+                
+            </div2>
+            
+        </div>
+        
     </body>
 </html>
