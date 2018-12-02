@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 9</title>
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script>
+        //   var fruitTotal = $("input[name=shippingType]:checked").val();
+        $("document").ready(function(){
+            $("#fruit").change(function(){
+               $.ajax({
+                   type:"GET",
+                   url:"",
+                   dataType:"html",
+                   //$("#fruit").val()
+                   data:{"fruit": $("#fruit").val() },
+                   success: function(data,status) {
+                       $("#fruitTotal").html($("#fruit").val() * 30);
+                   }
+               }); 
+            });
+        });
+        </script>
+    </head>
+<body>
+
+<h2>Basic HTML Table</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Product</th>
+    <th>Unit Price</th>
+    <th>Quantity</th>
+    <th>Total</th>
+  </tr>
+  <tr>
+    <td>Fruitcake</td>
+    <td>$30</td>
+    <td><input type='number' id = 'fruit'></td>
+    <td><label>$</label><span id='fruitTotal'></span></td>
+  </tr>
+  <tr>
+    <td>Pinata</td>
+    <td>$20</td>
+    <td><input type='number'></td>
+    <td><label id = 'pinata'>$</label></td>
+  </tr>
+  <tr>
+    <td>Shipping</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Subtotal</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Tax</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Total</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<button>Order</button>
+</body>
+</html>
