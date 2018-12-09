@@ -115,3 +115,9 @@ Stack trace:
 #1 /home/ubuntu/workspace/cst336/labs/lab10/index.php(51): carousel()
 #2 {main}
   thrown in /home/ubuntu/workspace/cst336/labs/lab10/carousel.php on line 4
+[09-Dec-2018 04:09:58 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_c79de9dfc9959d7'' in /home/ubuntu/workspace/cst336/inc/dbConnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/inc/dbConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/labs/lab10/index.php(3): startConnection('heroku_c79de9df...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 20
