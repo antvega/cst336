@@ -1,0 +1,6 @@
+[04-Dec-2018 18:19:28 UTC] PHP Warning:  include(loginProcess.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/finalProject/index.php on line 2
+[04-Dec-2018 18:19:28 UTC] PHP Stack trace:
+[04-Dec-2018 18:19:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/finalProject/index.php:0
+[04-Dec-2018 18:19:28 UTC] PHP Warning:  include(): Failed opening 'loginProcess.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/finalProject/index.php on line 2
+[04-Dec-2018 18:19:28 UTC] PHP Stack trace:
+[04-Dec-2018 18:19:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/finalProject/index.php:0

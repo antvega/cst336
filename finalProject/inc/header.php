@@ -10,18 +10,18 @@
             <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pets.php">Adoptions</a>
+            <a class="nav-link" href="loginVerification.php">Admin</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.php">About</a>
-          </li>
+          <!--<li class="nav-item">-->
+          <!--  <a class="nav-link" href="about.php">About</a>-->
+          <!--</li>-->
         </ul>
       </div>
     </nav>
         
         
-        <div class="jumbotron">
-          <h1> CSUMB Animal Shelter</h1>
-          <h2> The "official" animal adoption website of CSUMB </h2>
-        </div>
+        <!--<div class="jumbotron">-->
+        <!--  <h1> CSUMB Animal Shelter</h1>-->
+        <!--  <h2> The "official" animal adoption website of CSUMB </h2>-->
+        <!--</div>-->
         
