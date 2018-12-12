@@ -58,7 +58,7 @@ function getAllPets(){
                         //alert(data); 
                     },
 	          }); // ajax closing
-	          
+
 	           //   alert($(this).attr('id'));
 	          }); // petlink click
 	          

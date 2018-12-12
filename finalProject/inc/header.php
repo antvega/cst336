@@ -1,4 +1,22 @@
 <!--Add main menu here -->
+<?php
+session_start();
+function checkLogin(){
+  if(!isset($_SESSION['adminFullName'])){
+              echo "<li class='nav-item'>";
+              echo "<a class='nav-link' href='login.php'>Login</a>";
+              echo "</li>";
+  } else {
+              echo "<li class='nav-item'>";
+              echo "<a class='nav-link' href='logout.php'>Logout</a>";
+              echo "</li>"; 
+              
+              echo "<li class='nav-item'>";
+              echo "<a class='nav-link' href='admin.php'>Edit Movies</a>";
+              echo "</li>"; 
+  }
+}
+?>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">CSUMB</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,9 +27,10 @@
           <li class="nav-item active">
             <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="loginVerification.php">Admin</a>
-          </li>
+          <?php
+          checkLogin();
+          ?>
+
           <!--<li class="nav-item">-->
           <!--  <a class="nav-link" href="about.php">About</a>-->
           <!--</li>-->

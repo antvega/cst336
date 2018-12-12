@@ -12,6 +12,4 @@ $stmt->execute();
 
 header("Location: admin.php");
 
-
-
 ?>

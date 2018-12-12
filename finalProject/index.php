@@ -1,7 +1,31 @@
 <?php
-    include 'loginVerification.php'
-?>
+include 'inc/functions.php';
+  function displayCategories() {
+    $categories = ['titles', 'genres','ratings'];
+    foreach ($categories as $c) {
+      echo "<option value='" . $c ."'>" . ucfirst($c) ."</option>";
+    }
+  }
+  
+  function displayResults(){
+    if(isset($_POST['submit'])) {
+        echo "<h1>Movies Found</h2>";
+        echo "<br>";
+        $movies = getResults();
+        
+        foreach($movies as $movie){
+            echo "<h3>Title: ".$movie['title']."</h3>";
+            echo "<h5>".$movie['type']."</h5>";
+            echo "<h5>".$movie['runtime']."</h5>";
+            echo "<h5>".$movie['rating']."</h5>";
+            $photo = getPhoto($movie['title']);
+            echo "<img src='img/".$photo['posters']."'>";
+            //echo "<h5>".$movie['posters']."</h5>";
+        }
 
+    }
+  }
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,17 +36,32 @@
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>   
         <script>
-            // function ah(){
-            //     alert("Wrong username or password");
-            // }
+        
         </script>
     </head>
     <body>
         <?php
 	        include 'inc/header.php';
         ?>
-        <!--<h1> Movie Finder </h1>-->
+        <br>
         
-
+        <!--<h1> Movie Finder </h1>-->
+      <form method="post">
+        Title: <input type="text" name="title"><br>
+        
+        Sort by: <select name="genreSort">
+          <option value=""> Select one </option>
+          <?=displayCategories()?>
+        </select><br>
+        <input type="radio" name="order" value="asc"> Ascending <br>
+        <input type="radio" name="order" value="desc"> Descending <br>
+        
+        <br><input class="btn btn-default" type="submit" name ="submit" value="Search">
+      </form>
+        
+        <?php
+           displayResults();
+        ?>
+        
     </body>
 </html>
