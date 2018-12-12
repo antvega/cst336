@@ -64,7 +64,7 @@ include 'inc/functions.php';
         <input type="radio" name="order" value="asc"> Ascending <br>
         <input type="radio" name="order" value="desc"> Descending <br>
         
-        <br><input class="btn btn-default" type="submit" name ="submit" value="Search">
+        <br><input style = "background-color:lightblue;"class="btn btn-default" type="submit" name ="submit" value="Search">
       </form>
         
         <?php
