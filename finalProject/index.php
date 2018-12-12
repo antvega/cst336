@@ -14,12 +14,20 @@ include 'inc/functions.php';
         $movies = getResults();
         
         foreach($movies as $movie){
-            echo "<h3>Title: ".$movie['title']."</h3>";
-            echo "<h5>".$movie['type']."</h5>";
-            echo "<h5>".$movie['runtime']."</h5>";
-            echo "<h5>".$movie['rating']."</h5>";
-            $photo = getPhoto($movie['title']);
-            echo "<img src='img/".$photo['posters']."'>";
+          $photo = getPhoto($movie['title']);
+          echo "<table>";
+          echo "<tr>";
+          echo "<td><img src='img/".$photo['posters']."'>";
+          echo "</td>";
+          echo "<td>";
+          echo "<h3>Title: ".$movie['title']."</h3>";
+          echo "<h5>Genre: ".$movie['type']."</h5>";
+          echo "<h5>".$movie['runtime']." minutes</h5>";
+          echo "<h5>Rating: ".$movie['rating']."</h5>";
+          echo "</td>";
+          echo "</table>";
+            
+            // echo "<img src='img/".$photo['posters']."'>";
             //echo "<h5>".$movie['posters']."</h5>";
         }
 
